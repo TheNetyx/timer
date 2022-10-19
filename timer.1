@@ -1,0 +1,49 @@
+.TH TIMER 1 2922-10-19
+.SH NAME
+timer - a timer
+.SH SYNOPSIS
+.B timer -S
+.br
+.B timer 
+[
+.B -q -h 
+.I HOURS
+.B -m
+.I MINUTES 
+.B -s
+.I SECONDS
+]
+.SH DESCRIPTION
+Timer if 
+.B -S
+is specified, and stopwatch otherwise. Defaults to timer of 0 seconds if no arguments are specified. If in timer mode, 00:00:00 is displayed, flashing, and the program does not exit.
+.PP
+.B -S
+.RS
+enables stopwatch mode and ignore all other arguments
+.RE
+.PP
+.B -q
+.RS
+quiet (does not print \a after time is up)
+.RE
+.PP
+.B -h 
+.I HOURS
+.RS
+add HOURS hours to the timer
+.RE
+.PP
+.B -m
+.I MINUTES
+.RS
+add MINUTES minutes to the timer
+.RE
+.PP
+.B -s
+.I SECONDS
+.RS
+add SECONDS seconds to the timer
+.RE
+.SH AUTHOR
+Alex Lo (netyx0103@gmail.com)
